@@ -1,0 +1,80 @@
+---
+layout: default
+title: Lorenz
+---
+
+<div id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>ABOUT</h5>
+            </div>
+            <div class="col-lg-6">
+                I'm a (final year) computer science student with strong interest in algorithm engineering.
+                Currently I'm studying at the University of Leicester in the MSc programme <em>"Advanced Computational Methods"</em>, which I am due to finish later this year.
+                Apart from my studies, I contribute to some great open source projects like Glowing Bear.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container desc">
+    {% for post in site.posts %}
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h4>
+                {% if forloop.first %}
+                POSTS
+                {% else %}
+                &nbsp;
+                {% endif %}
+            </h4>
+        </div>
+        <div class="col-lg-6">
+            <a href="{{ post.url }}">{{ post.title }}</a> <br/>
+            <em><small>Posted {{ post.date | date_to_string }}</small></em>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <!--More Posts...-->
+            <br />
+            &nbsp;
+            <br />
+            &nbsp;
+        </div>
+    </div>
+</div>
+
+<div class="container bluewrap">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>PROJECTS</h5>
+        </div>
+        <div class="col-lg-6">
+            <p>
+            These are a few projects I've worked on recently. For older projects, please refer to the <a href="/projects.html">full project list</a>.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p>
+            <t><a href="https://github.com/cormier/glowing-bear">Glowing Bear</a></t>
+            <br />
+            Glowing Bear is a modern IRC client, or, more specifically, a browser/app frontend. It is implemented as a WeeChat relay client using WebSockets, and works great both in desktop and mobile environments.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p>
+            <t><a href="https://github.com/lorenzhs/hubot-tell">hubot-tell</a></t>
+            <br />
+            Hubot-tell is a hubot plugin for relaying messages to users that are currently not present.
+            </p>
+        </div>
+    </div>
+</div>
+

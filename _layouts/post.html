@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1">
+            <h2 class="title">{{ page.title }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1">
+            {% if page.deprecated %}
+            <div class="deprecated">
+                <span class="warning">Warning!</span>
+                <p>{{ page.deprecated | textilize }}</p>
+            </div>
+            {% endif %}
+            <p>
+            {{ content }}
+            </p>
+        </div>
+    </div>
+</div>

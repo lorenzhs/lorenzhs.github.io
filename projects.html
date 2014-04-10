@@ -1,0 +1,129 @@
+---
+layout: default
+title: Lorenz
+---
+
+<div id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>ABOUT</h5>
+            </div>
+            <div class="col-lg-6">
+                I'm a (final year) computer science student with strong interest in algorithm engineering.
+                Currently I'm studying at the University of Leicester in the MSc programme <em>"Advanced Computational Methods"</em>, which I am due to finish later this year.
+                Apart from my studies, I contribute to some great open source projects like Glowing Bear.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-7 col-lg-offset-2">
+            <p>
+            <h2><em>Current Projects and Participations</em></h2>
+            <small>These are the projects I actively work on at the moment.</small>
+            </p>
+        </div>
+    </div>
+</div>
+
+<a id="glowing-bear"></a>
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <p>
+            <a href="https://github.com/cormier/glowing-bear/">
+                <t>Glowing Bear</t>
+            </a>
+            <br />
+            <small><em>since December 2013</em></small>
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <p>
+            Glowing Bear strives to provide a modern IRC experience, right in the browser, wherever you are. Some people would probably call this "cloud", but as I'll detail below, that's not entirely true.
+            </p>
+            <span>What Glowing Bear isn't:</span>
+            <ul>
+                <li>A standalone IRC client (it's a <a href="http://www.weechat.org/">WeeChat</a> relay plugin)</li>
+                <li>Hosted IRC</li>
+            </ul>
+            </p>
+            <span>What it is and does:</span>
+            <ul>
+                <li>An IRC frontend running in your browser, talking directly to your WeeChat instance via WebSockets</li>
+                <li>Soon, it will also be an Android app that provides a better native experience on your phone or tablet</li>
+                <li>Supports fully SSL-encrypted communication with your server</li>
+                <li>Fully IPv6 capable, of course</li>
+            </ul>
+            <p>
+            While it provides most of what you would expect from an IRC client in the cloud, it's not: Glowing Bear connects to <em>your</em> WeeChat instance (most likely running on a machine that <em>you</em> control). Glowing Bear is pure client-side JavaScript, connecting directly to <em>your</em> server, and your server only. This means that <em>you</em> are in control 100% of the way.
+            </p>
+
+            <p>
+            I joined the Glowing Bear team in December of 2013, a time in which I was looking for an in-browser IRC frontend. At the time, I was running irssi in a terminal multiplexer on a shell server, ssh'ing in there every time I needed it. This seems to be a fairly common approach, yet it felt unnecessarily clunky and the mobile experience was horrible. So I went out to look for a replacement. My friend <a href="https://xhochy.com">xhochy</a> suggested <a href="https://www.irccloud.com/">IRCCloud</a>, which is pretty neat, but I wanted a self-hosted, open source solution and didn't feel like paying 4€ a month for IRC. There turned out to be quite a few projects in that direction – some including their own IRC client, some building on top of existing clients –, but Glowing Bear is the one I liked best. It's simple, easy to set up, easy to use and understand, and worked pretty well already, although a bit rough around the edges.
+            </p>
+            <p>
+            Shortly after, I began contributing bits and pieces, like sorting channels by server, a per-buffer input history, or an improved mobile experience. Recently, I've started developing a native Android app with <a href="https://cordova.apache.org/">Apache Cordova</a> to leverage the full power of native apps like notifications. There's even a <a href="https://play.google.com/store/apps/details?id=com.glowing_bear">developer preview</a> in the Google Play Store!
+            </p>
+            <p>
+            <em>Used techniques:&nbsp;</em>
+            <span class="label label-primary">JavaScript</span>
+            <span class="label label-primary">AngularJS</span>
+            <span class="label label-primary">WebSockets</span>
+            <span class="label label-primary">Apache Cordova</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container desc">
+    <div class="col-lg-7 col-lg-offset-2">
+        <p>
+        <h2><em>Small Projects and Short Hacks</em></h2>
+        <small>
+            These projects are small or were built in a short period of time, e.g. a weekend project, and may not be developed anymore thereafter.
+            Nevertheless I will try to keep them running and everything uploaded for documentation.
+            I should probably add a whole lot of stuff that I currently don't remember to this list
+        </small>
+        </p>
+    </div>
+</div>
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <p>
+            <a href="https://github.com/lorenzhs/hubot-tell">
+                <t>hubot-tell</t>
+            </a>
+            <br />
+            <small>
+                <em>
+                    Started March 2013
+                </em>
+            </small>
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <p>
+            A small script to teach hubot message relaying. Suppose I want to highlight someone in a group chat (Campfire, IRC, XMPP, and several dozen other chat protocols are supported), but they're not online. Hubot-tell teaches hubot, GitHub's open source life embetterment robot, to do exactly that. It even supports multiple recipients and different command aliases.
+            </p>
+            <p>
+            <em>Used techniques:&nbsp;</em>
+            <span class="label label-primary">CoffeeScript</span>
+            <span class="label label-primary">node.js</span>
+            <span class="label label-primary">hubot</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--
+<div class="container desc">
+    <div class="col-lg-7 col-lg-offset-2">
+        <p>
+        <h2><em>Previous and retired Projects</em></h2>
+        <small>These are the projects where I do not work on anymore or that are completely retired.</small>
+        </p>
+    </div>
+</div>
+-->
