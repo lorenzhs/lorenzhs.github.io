@@ -18,11 +18,11 @@ Glowing Bear as it looks on the desktop, running in Chrome for Linux
 
 On a mobile phone, the irrelevant stuff is gone until you need it and swipe it in from the sides.
 
-If you're interested in using Glowing Bear, simply follow the usage instructions on the [landing page](https://cormier.github.io/glowing-bear) to set up the relay plugin. If you fancy encryption (which is generally a good idea), you'll find help on setting that up as well. And should you want to host Glowing Bear yourself, just clone the repository and serve it with a web server:
+If you're interested in using Glowing Bear, simply follow the usage instructions on the [landing page](https://cormier.github.io/glowing-bear/) to set up the relay plugin. If you fancy encryption (which is generally a good idea), you'll find help on setting that up as well. And should you want to host Glowing Bear yourself, just clone the repository and serve it with a web server:
 
 {% highlight bash %}
 git clone https://github.com/cormier/glowing-bear.git
 python -m SimpleHTTPServer
 {% endhighlight %}
 
-We'd love to hear your feedback! Join us at <a href="irc://chat.freenode.net/#glowing-bear">#glowing-bear</a> on freenode! Check out our <a href="https://github.com/cormier/glowing-bear">project page</a> on GitHub to report issues or simply have a look at the source.
+We'd love to hear your feedback! To use Glowing Bear, simply head over to [https://cormier.github.io/glowing-bear/](https://cormier.github.io/glowing-bear/). Join us at [#glowing-bear](irc://chat.freenode.net/#glowing-bear) on freenode! Check out our [project page](https://github.com/cormier/glowing-bear) on GitHub to report issues or simply have a look at the source.
