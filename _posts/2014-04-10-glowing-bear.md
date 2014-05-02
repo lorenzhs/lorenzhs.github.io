@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Glowing Bear – IRC for the 21st century
+title: Glowing Bear — IRC for the 21st century
 ---
 
 Glowing Bear is a modern IRC experience. I'm probably not alone in thinking that a console client, running in a terminal multiplexer on your server is not the best experience. While it's not too bad on the desktop, mobile usage is just a pain. And what if you have to use someone else's machine and want to access IRC? If they're using Windows, chances are, you'll have to download an ssh client first!
