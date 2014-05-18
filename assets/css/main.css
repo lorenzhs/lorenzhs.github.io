@@ -266,8 +266,11 @@ a:after {
 
 .desc {
 	padding-top: 50px;
-	padding-bottom: 60px;
 	font-weight: normal;
+}
+
+.desc.gapafter {
+	padding-bottom: 60px;
 }
 
 .desc p {
