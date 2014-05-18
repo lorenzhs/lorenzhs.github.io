@@ -12,7 +12,7 @@ title: Lorenz Hübschle-Schneider
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
+            <div class="col-lg-2 col-lg-offset-1 no-mobile">
                 <h5>ABOUT</h5>
             </div>
             <div class="col-lg-6">
@@ -28,13 +28,9 @@ title: Lorenz Hübschle-Schneider
     {% for post in site.posts %}
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1">
-            <h4>
-                {% if forloop.first %}
-                POSTS
-                {% else %}
-                &nbsp;
-                {% endif %}
-            </h4>
+            {% if forloop.first %}
+                <h4>POSTS</h4>
+            {% endif %}
         </div>
         <div class="col-lg-6">
             <a href="{{ post.url }}">{{ post.title }}</a> <br/>
@@ -42,19 +38,10 @@ title: Lorenz Hübschle-Schneider
         </div>
     </div>
     {% endfor %}
-    <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-            <!--More Posts...-->
-            <br />
-            &nbsp;
-            <br />
-            &nbsp;
-        </div>
-    </div>
 </div>
 
 <div class="container bluewrap">
-    <div class="row">
+    <div class="row extra-space">
         <div class="col-lg-2 col-lg-offset-1">
             <a href="/projects.html"><h5>PROJECTS</h5></a>
         </div>
