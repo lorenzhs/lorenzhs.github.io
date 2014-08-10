@@ -26,6 +26,6 @@ $ cd glowing-bear
 $ python -m SimpleHTTPServer
 {% endhighlight %}
 
-We'd love to hear your feedback! To use Glowing Bear, simply head over to [https://glowing-bear.github.io/glowing-bear/](https://glowing-bear.github.io/glowing-bear/). Join us at [#glowing-bear](irc://chat.freenode.net/#glowing-bear) on freenode! Check out our [project page](https://github.com/glowing-bear/glowing-bear) on GitHub to report issues or simply have a look at the source.
+We'd love to hear your feedback! To use Glowing Bear, simply head over to [http://www.glowing-bear.org](http://www.glowing-bear.org). Join us at [#glowing-bear](irc://chat.freenode.net/#glowing-bear) on freenode! Check out our [project page](https://github.com/glowing-bear/glowing-bear) on GitHub to report issues or simply have a look at the source.
 
-Update: We moved to a GitHub organisation, [glowing-bear](https://github.com/glowing-bear), and I updated the links in the text accordingly.
+Update: We moved to a GitHub organisation, [glowing-bear](https://github.com/glowing-bear) and our own domain, [http://www.glowing-bear.org](http://www.glowing-bear.org), so I updated the links in the text accordingly.
