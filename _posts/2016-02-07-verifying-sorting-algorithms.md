@@ -31,7 +31,7 @@ time to get more confidence in the result.
 
 Let’s name the elements of the input array $\{e_1,\ldots,e_n\}$ and the output
 $\{o_1,\ldots,o_n\}$. Now consider the polynomial
-\\[q(z) = \prod_{i=1}^{n}{(z-e_i)} -\prod_{i=1}^{n}{(z-o_i)}\ .\\] We’re
+\\[q(z) = \prod\_{i=1}^{n}{(z-e_i)} -\prod\_{i=1}^{n}{(z-o_i)}\ .\\] We’re
 multiplying the differences between the elements of the input and our parameter
 $z$, and then do the same with the output and subtract the two. If both arrays
 are identical, then it’s easy to see that $q(z)=0$ for every $z$ that we plug in
@@ -95,7 +95,7 @@ because of cosmic radiation.
 Another approach, as described in
 [this MathOverflow post](http://mathoverflow.net/a/25384) by UC Irvine Professor
 David Eppstein would be to take a hash function $h(x)$ and compute
-$\sum_{i=1}^{n}{e_i}$ and $\sum_{i=1}^{n}{o_i}$. If the elements are the same,
+$\sum\_{i=1}^{n}{h(e_i)}$ and $\sum\_{i=1}^{n}{h(o_i)}$. If the elements are the same,
 the sums will match. However, some care has to be taken in choosing the hash
 function, and a sufficiently wide number type has to be used to deal with very
 large inputs, as the sums could overflow otherwise. Also note that the
