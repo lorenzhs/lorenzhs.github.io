@@ -3,11 +3,16 @@ layout: post
 title: Making Pizza for Hungry Hackers at Scale
 ---
 
+![Pizza!](/images/pizza.jpg)
+
 This is the story of how we made roughly 120m² of pizza over the course of five
-days at [SHA2017](https://sha2017.org/), a hacker camp in the Netherlands that
-ended just over a week ago. Our pizza was free for the taking, no strings
-attached (except cheese strings), and all surplus donations were given to the
-EFF. All [insert number here]$ of surplus donations :)
+days at [SHA2017](https://sha2017.org/), a hacker camp in the Netherlands in
+August of 2017. Our pizza was free for the taking, no strings attached (except
+cheese strings), and all surplus donations ($1461!) were given to the Electronic
+Frontier Foundation (EFF).
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We&#39;ve done the math – your generous donations mean that we ran a surplus of 1226.20€ or $1461 which now go to <a href="https://twitter.com/EFF?ref_src=twsrc%5Etfw">@EFF</a>! 😱🍕🎊🎁</p>&mdash; Pizza Village at SHA (@pizzahackery) <a href="https://twitter.com/pizzahackery/status/902923661899857921?ref_src=twsrc%5Etfw">August 30, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 To give you some context and a sense of the scale, SHA is a five-day event for
 around 3500 visitors, in the outdoors, running on immense diesel generators and
@@ -32,8 +37,8 @@ event.
 Some numbers on the oven: it draws 14.4kW of power and has two compartments,
 each measuring 60×90cm². At 90×120×90cm³, its footprint exceeds a standard
 European pallet and is *just* under the limit of a standard door frame.
-Including the firestones for baking on, it weighs in at around 150kg (330lbs for
-the metrically impaired). It's a beast.
+Including the firestones for baking on, it weighs in at an estimated 150kg
+(330lbs for the metrically impaired). It's a beast.
 
 A test run a week later showed that everything was mostly working and we made
 some first trial pizzas.
