@@ -46,6 +46,10 @@ a {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+img {
+    max-width: 100%;
+}
+
 a:hover,
 a:focus {
     color: #7b7b7b;
@@ -302,6 +306,11 @@ sm {
 	.no-mobile {
 		display: none !important;
 	}
+
+        body > div.container {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
 
 	#intro {
 		padding-top: 5px;
