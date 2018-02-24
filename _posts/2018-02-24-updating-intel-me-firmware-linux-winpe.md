@@ -72,3 +72,6 @@ move to the firmware update installer directory with `cd /WIN/ME` and run the
 updater with `MEUpdate.cmd`. Wait for a bit until it's finished. If it complains
 about not finding `shutdown.exe` at the end, that's fine. Reboot by clicking the
 close button at the top right of the command prompt window (yup, really). Done!
+
+*tl;dr* You can get the short version at
+[https://news.ycombinator.com/item?id=1574415](https://news.ycombinator.com/item?id=15744152).
