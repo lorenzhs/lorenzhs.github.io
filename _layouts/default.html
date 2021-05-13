@@ -1,84 +1,41 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link href="/atom.xml" rel="alternate" title="Lorenz" type="application/atom+xml" />
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" integrity="sha384-7tY7Dc2Q8WQTKGz2Fa0vC4dWQo07N4mJjKvHfIGnxuC4vPqFGFQppd9b3NWpf18/" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Custom styles for this template -->
-  <link href="/assets/css/main.css" rel="stylesheet">
+    <title>{{ site.title }}{% if page.title and page.title != "" %} &mdash; {{ page.title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" integrity="sha384-X7L1bhgb36bF1iFvaqvhgpaGpayKM+vXNNYRlF89BFA5s3vi1qZ8EX9086RlZjy1" crossorigin="anonymous">
+    {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
 
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-</head>
-<body style="padding-top:50px">
-  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">Lorenz</a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-    <ul class="nav navbar-nav">
-      <li>
-      <a href="/">Home</a>
-      </li>
-      <li>
-      <a href="/projects.html">Projects</a>
-      </li>
-      <li>
-      <a href="/imprint.html">Impressum</a>
-      </li>
-    </ul>
-    </nav>
-  </div>
-  </header>
-  <div class="container">
+    <link rel="stylesheet" href="/assets/css/main.css?{{ site.time | date: '%s%N' }}">
+
+    <link rel="apple-touch-icon" href="{{ site.icon }}">
+
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+  </head>
+  <body>
+
     {{ content }}
-  </div>
-	<div id="footwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-        <div class="col-lg-3">
-          <p><sm>EMAIL</sm><br/>
-          lorenz@4z2.de<br/>
-          PGP: <a href="https://keybase.io/lorenz">2452 F4DF D3FC 902C</a>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>CODING</sm><br/>
-          <a href="https://github.com/lorenzhs/">Github</a><br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SOCIAL</sm><br />
-          <a href="https://twitter.com/znetroll">Twitter</a><br />
-          </p>
-        </div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
-  <div id="c">
-    <div class="container">
-      <p>Based on the Kelvin Theme by <a href="http://www.blacktie.co">BLACKTIE.CO</a> &amp; <a href="https://xhochy.com">xhochy</a></p>
-    </div>
-  </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha384-UM1JrZIpBwVf5jj9dTKVvGiiZPZTLVoq4sfdvIe9SBumsvCuv6AHDNtEiIb5h1kU" crossorigin="anonymous"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" integrity="sha384-oFMgcGzKX7GaHtF4hx14KbxdsGjyfHK6m1comHjI1FH6g4m6qYre+4cnZbwaYbHD" crossorigin="anonymous"></script>
-</body>
+    {% unless site.hide_search %}
+      {% include search.html %}
+    {% endunless %}
+
+    {% include menu.html %}
+
+    {% unless site.hide_credits %}
+      <aside class="site-credits">
+        <p>
+          <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="http://jekyllrb.com">Jekyll</a></small>
+        </p>
+      </aside>
+    {% endunless %}
+
+  </body>
 </html>

@@ -3,6 +3,11 @@ layout: post
 title: Updating the Intel ME firmware on a ThinkPad without installing Windows
 ---
 
+**Note:** In August of 2018, Lenovo joined the [Linux Vendor Firmware Service](https://fwupd.org), which enables installing firmware updates from within Linux. You should use `fwupdmgr` to update the various firmware components of your ThinkPad, and the WinPE hackery below is no longer required.
+My original post follows below, it might still be applicable to other manufacturers.
+
+<hr style="margin-left:auto;margin-right:auto">
+
 Lenovo only provides Windows installers for Intel Management Engine (ME)
 firmware updates. Since ME occasionally has [embarrassing security
 issues](https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr),
@@ -17,8 +22,8 @@ easy enough to adapt the instructions for BSD etc.
 First, you need to download a Windows 10 installer image from [Microsoft's
 download page](https://www.microsoft.com/software-download/windows10ISO). Don't
 worry, we're not going to install it. Windows 10 is required for newer machines
-(Kaby Lake and newer, for laptops that's the Core i3/i5/i7 7XXX series), on
-older machines you can also use Windows 7. Mount the installer image:
+(Kaby Lake and newer, for laptops that's the Core i3/i5/i7 7xxx series), on
+older machines you can also use that old Windows 7 image you still have lying around somewhere. Mount the installer image:
 
 ```bash
 sudo mount -o loop,ro Win10_1709_English_x64.iso /mnt
@@ -50,7 +55,8 @@ which you can install from the `wimtools` package in Debian. You might require
 additional tools, which `mkwinpeimg` it will tell you about.
 
 ```bash
-mkwinpeimg --windows-dir=/mnt --overlay=$HOME/.wine/drive_c_DRIVERS winpe.img
+mkwinpeimg --windows-dir=/mnt \
+   --overlay=$HOME/.wine/drive_c_DRIVERS winpe.img
 ```
 
 This will take a few seconds, and you will end up with a file called `winpe.img`
@@ -73,5 +79,7 @@ updater with `MEUpdate.cmd`. Wait for a bit until it's finished. If it complains
 about not finding `shutdown.exe` at the end, that's fine. Reboot by clicking the
 close button at the top right of the command prompt window (yup, really). Done!
 
-*tl;dr* You can get the short version at
+&nbsp;
+
+*tl;dr:* You can get the short version at
 [https://news.ycombinator.com/item?id=1574415](https://news.ycombinator.com/item?id=15744152).

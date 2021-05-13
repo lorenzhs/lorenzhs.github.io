@@ -2,28 +2,36 @@
 layout: default
 ---
 
+{% if site.data.menu %}
+  {% include menu.html %}
+{% else %}
+  {% include back-link.html %}
+{% endif %}
 
-<div class="container desc">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1">
-            <h2 class="title">{{ page.title }}</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1">
-            {% if page.deprecated %}
-            <div class="deprecated">
-                <span class="warning">Warning!</span>
-                <p>{{ page.deprecated | textilize }}</p>
-            </div>
-            {% endif %}
-            <p>
-            {{ content }}
-            </p>
-        </div>
-    </div>
-</div>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
 
+  {% if page.title != "" %}
+    <h1 class="post-title divided p-name" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+  {% endif %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post-meta">
+    {% if page.author %}
+      <div itemprop="author">{{ page.author }}</div>
+    {% endif %}
+    <time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus-comments.html %}
+  {% endif %}
+
+</article>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"></script>
