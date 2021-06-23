@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Algorithm Engineer for Big Data
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://4z2.de" # the base hostname & protocol for your site, e.g. http://example.com
+production_url: "https://4z2.de"
 icon: /assets/images/icon-512.png
 twitter_username: lorenz_h_
 github_username:  lorenzhs
