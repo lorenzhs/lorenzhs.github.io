@@ -38,6 +38,10 @@ markdown: kramdown
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - hitchens-theme.gemspec
+  - LICENSE.txt
+  - README.md
 
 plugins:
   - jekyll-paginate
