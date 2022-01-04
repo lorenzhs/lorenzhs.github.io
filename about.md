@@ -4,17 +4,24 @@ title: About Lorenz
 ---
 
 <p style="margin-top:-1.5em">
-Lorenz is an Algorithm Engineer for Big Data, algorithms researcher, and experienced high-performance modern C++ programmer looking for new challenges.  He recently defended his PhD thesis at KIT.  His research focuses on probabilistic distributed algorithms for Big Data problems.
+Lorenz is an Algorithm Engineer for Big Data, algorithms researcher, and experienced high-performance modern C++ programmer.  He works as a Software Engineer on Firebolt's Query Processing team, building the cloud data warehouse of the future.  Before that, he completed his PhD thesis at KIT.  His research focuses on probabilistic distributed algorithms for Big Data problems.
 </p>
 
 ## Professional Experience
 
+### Software Engineer — Firebolt Analytics
+*Since September 2021*
+
+Working on the vectorised query engine of Firebolt's cloud data warehouse, including feature development, performance optimisation, and stability.
+
+&nbsp;
+
 ### PostDoc in Algorithm Engineering — KIT
-*Since December 2020*
+*December 2020 – September 2021*
 
-Focus: static approximate membership query & retrieval (perfect hash static function) data structures.  About to publish a static AMQ with sub-1% space overhead and query times on the order of a single cache miss.
+Focus: static approximate membership query & retrieval (perfect hash static function) data structures.  Designed and implemented [BuRR (bumped ribbon retrieval)](https://github.com/lorenzhs/BuRR/), a retrieval and static approximate membership query (AMQ) data structure with sub-1% space overhead and query times on the order of a single cache miss.
 
-Other Responsibilities include supervising BSc and MSc thesis projects and course work, coordinating a high-performance computing (HPC) project, and leading seminars and exercises.
+Other Responsibilities included supervising BSc and MSc thesis projects and course work, coordinating a high-performance computing (HPC) project, and leading seminars and exercises.
 
 &nbsp;
 
