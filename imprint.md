@@ -3,7 +3,7 @@ title: Impressum
 layout: imprint
 ---
 
-Dies ist eine private Website von Lorenz Hübschle-Schneider.
+Dies ist eine private Website von Lorenz Hübschle.
 Die Inhalte hier sind rein privater Natur und entsprechen meiner persönlichen Meinung.
 
 &nbsp;
@@ -12,7 +12,7 @@ Angaben gemäß § 5 TMG
 
 &nbsp;
 
-Lorenz Hübschle-Schneider
+Lorenz Hübschle
 
 Kaiserstr 12
 
@@ -22,7 +22,7 @@ Kaiserstr 12
 
 **Vertreten durch:**
 
-Lorenz Hübschle-Schneider
+Lorenz Hübschle
 
 &nbsp;
 
@@ -34,7 +34,7 @@ E-Mail: impressum /AT/ 4z2.de
 
 **Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
 
-Lorenz Hübschle-Schneider
+Lorenz Hübschle
 
 Kaiserstr 12
 
